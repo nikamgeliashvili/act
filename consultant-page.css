@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.main-title {
+    font-size: 32px;
+    color: #202020;
+    text-align: center;
+    padding: 40px 0 60px;
+    font-family: "BPG WEB 001 Caps";
+    font-weight: inherit;
+
+}
+
+.reserve {
+    position: absolute;
+    left: 0;
+    top: 40%;
+    display: flex;
+    align-items: center;
+    border: 1px solid #DA3429;
+    cursor: pointer;
+}
+
+.reserve:hover .reserve-hover {
+    width: 160px;
+
+}
+
+.reserve-hover {
+    background: white;
+    color: #DA3429;
+    transition: width .4s ease;
+    width: 0;
+    overflow: hidden;
+
+}
+
+.reserve-hover p {
+    margin-left: 15px;
+    font-family: 'Conv_bpg-arial-webfont';
+    font-size: 16px;
+    padding: 6px
+}
+
+.reserve img {
+    width: 55px;
+    background: #DA3429;
+    padding: 10px;
+
+}
+
+.consultant-section {
+    display: flex;
+}
+
+.consultant-img {
+    width: 70%;
+    padding-right: 30px;
+}
+
+.consultant-img img {
+    width: 100%;
+
+}
+
+.consultant-info {
+    width: 100%;
+}
+
+.consultant-info p {
+    margin-top: 40px;
+    font-family: 'Conv_bpg-arial-webfont';
+    max-height: 173px;
+    overflow: hidden;
+}
+
+.name {
+    font-size: 22px;
+    font-family: "BPG WEB 001 Caps";
+    font-weight: inherit;
+    padding-bottom: 10px;
+}
+
+span {
+    font-size: 18px;
+    font-family: 'Conv_bpg-arial-webfont';
+}
+
+.linkedin {
+    margin-top: 20px;
+}
+
+.linkedin img:hover {
+    opacity: .6;
+    transition: .3s;
+}
+
+.see-more {
+    color: #DA3429 !important;
+    font-family: 'Conv_bpg-arial-webfont';
+    text-align: center;
+    padding: 50px 0 20px;
+    border-bottom: 1px solid #E5E5E5;
+
+}
+
+.see-more span {
+    cursor: pointer;
+    transition: .3s;
+}
+
+.see-more span:hover {
+    opacity: .6;
+
+}
+
+.more-info-text {
+    display: none;
+}
+
+.review {
+    margin-bottom: 40px;
+}
+
+.review p {
+    font-size: 16px;
+    font-family: 'Conv_bpg-arial-webfont';
+    padding: 10px 0 20px;
+}
+
+.review-section {
+    width: 100%;
+    margin: 80px auto 50px;
+    border-top: 1px solid #E5E5E5;
+    padding-top: 45px;
+    padding-bottom: 80px;
+    background: #FCFCFC;
+    position: relative;
+    overflow: hidden;
+    z-index: 99;
+
+}
+
+.form-background {
+    position: absolute;
+    bottom: 0;
+    right: -45px;
+    z-index: -1;
+}
+
+.review-section form {
+    width: 60%;
+    margin: 15px auto;
+}
+
+.title {
+    font-size: 22px;
+    font-family: "BPG WEB 001 Caps";
+    font-weight: inherit;
+    text-align: center;
+}
+
+.info-title {
+    font-size: 22px;
+    font-family: "BPG WEB 001 Caps";
+    font-weight: inherit;
+    margin-top: 15px;
+}
+
+.review-section input,
+textarea {
+    font-size: 16px;
+    padding: 17px 20px;
+    font-family: 'Conv_bpg-arial-webfont';
+    border: 1px solid #E5E5E5;
+    color: #202020;
+    width: calc(100% - 40px);
+    margin: 17px 0;
+
+
+}
+
+textarea {
+    resize: none;
+    height: 150px;
+}
+
+.review-section input::placeholder,
+textarea::placeholder {
+    color: #202020;
+}
+
+.form-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-name input {
+    width: calc(50% - 60px);
+}
+
+.submit {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.submit input {
+    width: 50%;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.submit input:hover {
+    opacity: .6;
+}
+
+.success-message {
+    text-align: center;
+    color: #2ECC71;
+    margin-top: 15px;
+}
+
+
+@media only screen and (max-width: 991px) {
+    .consultant-section {
+        flex-direction: column;
+    }
+
+    .consultant-img {
+        width: 100%;
+        padding-right: unset;
+    }
+
+    .consultant-info {
+
+        margin-top: 15px;
+    }
+
+    .main-title {
+        padding: 40px 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .main-container,
+    .review-section form {
+        width: 90%;
+    }
+
+    .form-name {
+        flex-direction: column;
+    }
+
+    .form-name input,
+    .review-section input,
+    textarea {
+        width: calc(100% - 30px);
+    }
+
+    .submit input {
+        width: 100%;
+    }
+
+    .review-section input,
+    textarea {
+        padding: 13px 15px;
+        margin: 7px 0;
+    }
+
+    .reserve {
+        top: 120px;
+    }
+
+    .reserve img {
+        width: 40px;
+        background: #DA3429;
+        padding: 8px;
+    }
+
+    .consultant-section {
+        margin-top: 15px;
+    }
+}
